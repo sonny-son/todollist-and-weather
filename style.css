@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+}
+a{
+     text-decoration: none; color: cornsilk;
+   
+}
+input{
+    background: none;
+    outline: inherit;
+}
+.header-bar{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    background-color: black;
+    color: cornsilk;
+}
+.header-bar_log{
+    font-size: 22px;
+}
+.toggleButton{
+    position: absolute;
+    right: 15px;
+    top:12px;
+}
+.header-bar_menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    padding-left: 0;
+    list-style: none;
+    display: none;
+}
+.header-bar_menu li{
+    padding: 8px 12px;
+    margin-right: 25px;
+}
+.header-bar_menu li:hover{
+    background-color: orange;
+    border-radius: 5px;
+}
+.header-bar_menu.showing{
+    display: flex;
+}
+.todo{
+    margin: 20px 12px;
+   
+}
+.todo-list{
+    padding-left: 0; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.enter-todo{
+    display: flex;
+    justify-content: center;
+    height: 35px;
+}
+.input-todo{
+    width: 250px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.3) ;
+}
+.input-button{
+    margin-left: 12px;
+    position:relative;
+    width: 60px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+}
+
+.input-button i{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    right: 14px;
+    bottom:1px;
+}

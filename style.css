@@ -88,6 +88,13 @@ input{
     margin-right: 12px;
     border-bottom: 1px solid black;
 }
+.finished-title{
+    display: block;
+    width: 100vw;
+    margin-bottom: 20px;
+    margin-right: 12px;
+    border-bottom: 1px solid black;
+}
 li{
     position: relative;
     padding: 8px 12px;

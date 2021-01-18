@@ -1,3 +1,7 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
 .Clear,
 .Clouds,
 .Rain,
@@ -9,4 +13,51 @@
 }
 .showing{
     display: block;
+}
+.weather{
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+.widget{
+    position: relative;
+    display: flex;
+    background-color:black;
+    width: 350px;
+    height: 200px;
+}
+.weather-info{
+    display: flex;
+    flex-direction: column;
+}
+.weather-icon i{
+    font-size: 100px;
+    margin: 15px;
+    margin-right: 40px;
+    margin-top: 20px;
+    color: coral;
+}
+.weather-info{
+    margin-top: 33px;
+}
+.weather-names{
+    margin-bottom: 15px;
+}
+.city{
+    color: whitesmoke;
+    position: absolute;
+    font-size: 25px;
+    left: 25px;
+    bottom: 40px
+}
+.weather-infos{
+    display: flex;
+    flex-direction: column;
+    color: cornsilk;
+}
+.weather-name{
+    font-size: 50px;
+    color:whitesmoke
 }

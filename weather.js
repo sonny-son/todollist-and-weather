@@ -5,19 +5,19 @@ const weather=document.querySelector(".weather"),
     cloud=document.querySelector(".cloud"),
     weatherInfo=weather.querySelector(".weather-info");
 
-function paintWeather(name,temp,hum,speed){
-    console.log(name)
+function paintWeather(name,city,temp,hum,speed){
     const weatherName=weather.querySelectorAll(`.${name}`);
-    console.log(weatherName)
     weatherName[0].classList.add("showing");
     weatherName[1].classList.add("showing");
     weatherName[1].innerText=`${name}`
+    const weatherCity=weatherInfo.querySelector(".city");
+    weatherCity.innerText=`@${city}`;
     const weatherTemp=weatherInfo.querySelector(".weather-temp");
-    weatherTemp.innerText=`${temp}`
+    weatherTemp.innerText=`Temp: ${temp}\`C`
     const weatherHum=weatherInfo.querySelector(".weather-hum");
-    weatherHum.innerText=`${hum}`
+    weatherHum.innerText=`Huminity: ${hum}%`
     const weatherSpeed=weatherInfo.querySelector(".weather-speed");
-    weatherSpeed.innerText=`${speed}`
+    weatherSpeed.innerText=`Windspeed: ${speed}mph`
 }
 
 function getWeather(lat,lon){
@@ -25,11 +25,12 @@ function getWeather(lat,lon){
     `).then(function (response){
         return response.json();
     }).then(function(json){
+        const city=json.name;
         const weatherName= json.weather[0].main;
         const currentTemp=json.main.temp;
         const humidity=json.main.humidity;
         const windSpeed=json.wind.speed;
-        paintWeather(weatherName,currentTemp,humidity,windSpeed)
+        paintWeather(weatherName,city,currentTemp,humidity,windSpeed)
     })
     
 }

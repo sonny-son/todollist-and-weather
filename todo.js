@@ -1,6 +1,4 @@
-const headerBar=document.querySelector('.header-bar'),
-    toggleButton=headerBar.querySelector('.toggleButton'),
-    menu=headerBar.querySelector('.header-bar_menu');
+
 const toDo= document.querySelector('.todo'),
     toDoForm=document.querySelector('.enter-todo'),
     toDoInput=toDoForm.querySelector(".input-todo"),
@@ -11,9 +9,6 @@ const TODO="toDo",
     FINISH="finished";
 let toDos=[]
 let finished=[]
-toggleButton.addEventListener('click',()=>{
-    menu.classList.toggle("showing");
-});
 function savefinished(finishedObj){
     localStorage.setItem("finished",JSON.stringify(finishedObj));
 }

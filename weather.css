@@ -1,0 +1,12 @@
+.Clear,
+.Clouds,
+.Rain,
+.Drizzle,
+.Thunderstorm,
+.Snow,
+.Atmospher{
+    display: none;
+}
+.showing{
+    display: block;
+}

@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script src="todo.js" defer></script>
+    <script src="weather.js" defer></script>
     <script src="nav.js" defer></script>
-
-    <title>todolist</title>
+    <title>weather</title>
 </head>
 <body>
     <header class="header-bar">
@@ -22,13 +21,21 @@
             <li><a href="weather.html">Weather</a></li>
         </ul>
     </header>
-    <main class="todo">
-        <form class="enter-todo">
-            <input class="input-todo" type="text" placeholder="Write to do"/>
-            <button class="input-button" type="submit" ><i class="fas fa-plus"></i></button>
-        </form>
-        <ul class="todo-list"><span class="todo-title">To Do</span></ul>
-        <ul class="finished-list"><span class="finished-title">Finished</span></ul>
+    <main class="weather">
+        <div class="weather-icon Clear"><i class="far fa-sun"></i></div>
+        <div class="weather-icon Clouds"><i class="fas fa-cloud"></i></div>
+        <div class="weather-icon Rain Drizzle"><i class="fas fa-cloud-rain"></i></div>
+        <div class="weather-icon Thunderstorm"><i class="fas fa-bolt"></i></div>
+        <div class="weather-icon Snow"><i class="far fa-snowflake"></i></div>
+        <div class="weather-icon Atmospher"><i class="fas fa-smog"></i></div>
+
+        <div class="weather-info">
+                <span class="weather-name Clouds Drizzle"></span>
+                <span class="weather-temp"></span>
+                <span class="weather-hum"></span>
+                <span class="weather-speed"></span>
+        </div>
     </main>
+    
 </body>
 </html>
